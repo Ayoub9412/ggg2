@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE5DD"
+    tools:context="com.gibi.walter.Main2Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#159788"
+        android:minHeight="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/myToolbarIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/mytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/myToolbar"
+        android:text="@string/chooseaddon"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/myRGroupe"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/mytxt"
+        android:paddingLeft="40dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/radiogroupbg">
+
+        <RadioButton
+            android:id="@+id/myEmojiRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/addimojis"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/myThemesRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/addthemes"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/myGroupeRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/addgroupes"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/myNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/myRGroupe"
+        android:text="@string/next"
+        android:textSize="20sp"
+        android:background="@drawable/nextbtnselector"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_banner">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "887040624345",
+    "firebase_url": "https://varibles-testing-project.firebaseio.com",
+    "project_id": "varibles-testing-project",
+    "storage_bucket": "varibles-testing-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887040624345:android:284a2c465a0808fe",
+        "android_client_info": {
+          "package_name": "com.gibi.walter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887040624345-5gt8kpoo0r7f1tirih9f3a3o91bklfgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjB3PeVXD1RyeGukqF9M1HNA8t3VP7B0c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
